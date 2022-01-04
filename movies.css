@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    font-size: 29px;
+    text-align:start;
+    letter-spacing: 5px;
+    text-transform:uppercase;
+    color: #95a3f7;
+    font-family:Bangers; 
+    font-weight: 900;
+    line-height: 1;
+    padding:22px;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    
+    
+}  
+.header h1{
+  color:darkslategray;
+  float: left;
+  line-height: 100px;
+}
+
+
+table ,th,td{
+    border: 1px solid black;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 6px;
+    overflow: hidden;
+    
+  
+  }
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: darkslategray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-family: Bangers;
+    font-size: 28px;
+    letter-spacing: 2px;
+  
+  }
+  
+  li a:hover {
+    background-color:rgb(109, 107, 107);
+  }
+  a.ex1:hover ,a.ex1:active{font-size:150%;}
+  
+
+body{
+    /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
+    
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;  
+
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.search{
+    padding: 6px;
+    margin-top:8px ;
+    font-size: 14px;
+    
+    
+  
+    
+  }
+  button{
+    padding: 6px;
+    margin-top:8px ;
+    font-size: 14px;
+    
+  }
+.card{
+width:16%;
+height: 400px;
+background-color: rgb(78, 77, 77);
+font-family: Bangers;
+border-radius: 5px;
+margin:60px;
+box-shadow: 1px 1px 5px rgb(141, 133, 133);
+display:inline-block;
+
+
+  }
+.image img{
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+ }
+.title {
+    text-align: center;
+    color: rgb(15, 12, 7);
+
+}
+.des{
+    text-align: center;
+    font-family: Bahnschrift SemiBold;
+    font-size: 16px;
+    font-style: bold;
+    
+    
+
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px black;
+}
+.para{
+    font-family: Bangers;
+    text-align:center;
+    font-size: 27px;
+    color:#4761f1 ;
+    letter-spacing: 2px;
+}
+.main{
+   
+    width: 97%;
+    margin: 20px;
+    border-radius: 15px; 
+    background-color:rgb(138, 133, 133);
+    box-shadow: 3px 3px 10px rgb(13, 12, 107);
+    backdrop-filter: blur(1px);
+    
+}
+.head p{
+  font-size: 30px;
+  font-family: Bangers;
+  color: #e7dc3cb6;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  
+
+
+}
+h2{
+    font-family: Bahnschrift SemiBold;
+    letter-spacing: 1px;
+    color: rgb(207, 188, 153);
+    text-decoration: underline rgb(102, 96, 96);
+    
+
+}
+button{
+    margin: 10px;
+    bottom:10px ;
+    font-family: Bahnschrift SemiBold;
+    width:100px; 
+    background: inherit;
+    font-size: 19px;
+    border-radius: 5px;
+}
+
+.rating label{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+
+}
+.rating label:before{
+  content:"\2605";
+  font-size:20px ;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+
+.rating label:after{
+  content:"\2605";
+  font-size:20px ;
+  position: absolute;
+  color: yellow;
+  display: inline-block;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.rating label:hover:after,
+.rating label:hover~label:after,
+.rating input:checked~label:after{
+  opacity: 1;
+}
+.rating{
+  direction: rtl;
+}
+.rating input{
+display: none;
+}

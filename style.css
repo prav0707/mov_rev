@@ -1,0 +1,283 @@
+.header{
+    font-size: 29px;
+    text-align:start;
+    letter-spacing: 5px;
+    text-transform:uppercase;
+   /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
+    margin: 0;
+    font-family:Bangers; 
+    font-weight: 900;
+    line-height: 1;
+    padding:50px;
+    /* background:#002D62 ; */
+     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    
+    
+    
+
+  }
+  .header h1{
+    color:darkslategray;
+  }
+  
+table ,th,td{
+    border: 1px solid black;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkslategray;
+    
+  
+  }
+  
+  li {
+    float: left;
+    
+  }
+  .search {
+    background-color: rgb(202, 235, 235);
+    margin-left: 10px;
+    border-radius:4px;
+  }
+  
+ li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Bangers;
+    font-size: 28px;
+    letter-spacing: 2px;
+    
+  
+  
+  }
+  
+  li a:hover {
+    background-color:rgb(184, 184, 184);
+  }
+  a.ex1:hover ,a.ex1:active{font-size:150%;}
+
+ 
+ #slider{
+   overflow: hidden;
+    width:500%; 
+    height: 50px;
+ }
+ #slider figure{
+   position: relative;
+
+   width: 500%;
+   padding: 0.2em;
+   max-height: 50%;
+   margin: 0;
+   left: 0;
+   animation: 20s slider infinite;
+ }
+ #slider figure img{
+   float: left;
+   width:20%;
+ }
+ @keyframes slider {
+   0%{
+     left: 0;
+   }
+   20% {
+     left:0;
+   }
+   25%{
+     left: -100%;
+
+   }
+   45%{
+     left: -100%;
+   }
+   50%{
+     left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75%{
+       left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+
+ }
+ 
+ 
+ body{
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+   
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;  
+  }
+
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+ input{
+   box-shadow: linen;
+  
+   
+ }
+.r{
+  color: aqua;
+
+}
+.search{
+  padding: 6px;
+  margin-top:8px ;
+  font-size: 10px;
+  float: right;
+  
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container1{
+  width: 500px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 60%;
+  left: 50%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow:0 8px 8px -4px rgb(111, 163, 180);
+}
+ 
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+} 
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+}
+img{
+  width: 50%;
+}
+footer{
+text-align:center;
+margin:0px;
+padding: 3px;
+/* background:linear-gradient(-45deg,rgb(201, 101, 101) ,rgb(139, 139, 238)); */
+/* background:#002D62; */
+ background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); 
+position: fixed;
+left: 0px;
+bottom:0px;
+right: 10px;
+width: 100%;
+color: moccasin;
+
+
+}
+a:link,a:visited{
+  background:none;
+  color: whitesmoke;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+a:hover,a:active{
+color: thistle;
+}
+
