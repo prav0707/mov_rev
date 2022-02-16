@@ -1,4 +1,149 @@
-body{
-    background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Dongle:wght@300&family=Fredoka+One&family=Nunito:wght@200&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
 }
 
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Fredoka One;
+    width:100%;
+    height: 100vh;
+}
+
+h1{
+font-size: 60px;
+padding: 20px 24px;
+border-radius: 12px;
+background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+width: 280x;
+height: 80px;
+transition: all .3s ease-in;
+color: #A9BA9D;
+}
+h1 a{
+    text-decoration: none;
+    color:  #A9BA9D;
+}
+
+h1 a:hover{
+    color:#00FFFF;
+}
+ h1:hover{
+    letter-spacing:5px ;
+    color:#00FFFF;
+    
+    
+}  
+h1.abt:hover{
+    transform: rotate(360deg);
+    transition: 2s ease-in-out;
+}
+h1.abt2:hover{
+    width: 290px;
+    height: 250px;
+    transition:all 2s ease;
+    color: rgb(236, 73, 9);
+    cursor: pointer;
+}
+p{
+    color: cornsilk;
+    font-size: 18px;
+    margin: 50px;
+
+}
+
+div:nth-child(1){
+    background-image: url('images - Copy/black.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-child(2){
+    background: #002D62;
+    background-size: cover;
+    height: 500px;
+    
+}
+div:nth-child(3){
+    background-image: url('images - Copy/spider-man-.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+div:nth-child(4){
+    background: #EF0107;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+div:nth-child(5){
+    background-image: url('images - Copy/thor.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer{
+    padding: 40px 0;
+    height: 200px;
+    background-color: #452c63;
+    
+}
+.footer .social {
+    text-align: center;
+    padding-bottom:25px;
+    color: #D8BFD8;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #1f74fe8e;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    opacity: 20;
+}
+.footer ul{
+    margin-top: 0;
+    font-family: Dongle;
+    padding:0;
+    list-style: none;
+    font-size: 33px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    
+
+}
+.footer ul li{
+   
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a:hover{
+    opacity: 1;
+    color: rgba(240, 255, 240, 0.329);
+}
+.footer .copyright{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 24px;
+      color: grey;
+      font-family: Dongle;
+      cursor: pointer;
+}

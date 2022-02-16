@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-image: url('images - Copy/stars.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.owl-theme{
+   
+    margin-top: 250px;
+    background:rgba(225,225,225,0.1);
+
+}
+.owl-theme .item{
+    display: flex;
+    padding: 5px 14px;
+    margin: 0 10px;
+    margin-top: 20px;
+    margin-left: -10px;
+    background-color: rgba(225,225,225,0.1);
+    backdrop-filter: blur(10px);
+    height: 300px;
+    width: 100%;
+    border-radius: 7px;
+}
+.owl-theme .item .images img{
+  
+    height: 75%;
+    width:100%;
+}
+
+.owl-theme .title{
+    position: relative;
+    bottom: -240px;
+}
+
+
+.owl-nav{
+
+    
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.owl-prev:hover{
+    font-size: 54px;
+    background-color: red;
+}
+
+.owl-nav .owl-prev{
+    position: absolute;
+    top:7%;
+    left: 0px;
+    height: 296px;
+    width: 30px;
+    backdrop-filter: blur(3px);
+    box-shadow: 6px 6px 10px rgb(14, 13, 15);
+    border: 2px solid white;
+ 
+  
+}
+.owl-nav .owl-next{
+    position: absolute;
+    top:7%;
+    right: 0px;
+    height: 296px;
+    width: 30px;
+    backdrop-filter: blur(3px);
+    box-shadow: 6px 6px 10px rgb(14, 13, 15);
+    
+}

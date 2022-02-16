@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,54 +8,52 @@
     <link rel="stylesheet" href="movies.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/d92bc398a4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="header"> 
-        <h1>FILM-CAVE</h1>
-        <div class="navg">
-        <ul>
-            <li><a class="ex1" href="index.html"><b>HOME<b></a></li>
-            <li><a class="ex1" href="signup.html">SIGN_UP</a></li>
-            <li><a class="ex1" href="login.html">LOGIN</a></li>
-            <li><a class="active" href="movies.html">MOVIES</a></li>
-            <li><a class="ex1" href="about.html">ABOUT</a></li>
-            <div class="search-container">
-            <input class="search" type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        
-        </ul>
-        
+    <nav>
+        <div class="logo">FILM<span class="cave">CAVES</span></div>
+        <div class="search-box">
+            <input type="search" placeholder="search..">
+            <span class="fa fa-search"></span>
         </div>
-        
-
-        
-        </div>
-           <form action="act">
-          
-        </form>
-        
+         <ol>
+         <li><a class="active" href="index.html">HOME </a></li>
+         <li><a class="ex1" href="signup.html">SIGN_UP</a></li>
+         <li><a class="ex1" href="login.html">LOGIN</a></li>
+         <li><a class="ex1" href="movies.html">MOVIES</a></li>
+         <li><a class="ex1" href="about.html">ABOUT</a></li>
+        </ol>
+        </nav>
         
         <div class="para">
-            <h3>EXPLORE THE WIDE RATINGS OF MOVIES</h3>
-            <p></p>
+            <h3>EXPLORE THE  WIDE  RATINGS  OF  MOVIES</h3>
+            
         </div>
-        <div class="main">
-        <div class="head">
-            <p>TOP PICKS FOR YOU:</p>
+        <div class="head"><p>TOP RATINGS:</p>
 
         </div>
-        <div class="card">
+
+        <div class="main">
+
+        <div class="card" >
             <div class="image">
-                <img src="https://cdn.pixabay.com/photo/2019/03/21/02/51/deadpool-4070071__340.jpg">
+                <img src="images - Copy/movie-3.jpg">
 
             </div>
             <div class="title">
-               <h2>Deadpool </h2> 
+               <h2>Shang-Chi </h2> 
             </div>
             <div class="des">
                 <p>7.1</p>
-                <div class="rating">
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                    
+                <!-- <div class="rating">
                  <input type="radio" name="star" id="star1"><label for="star1"></label>
                  <input type="radio" name="star" id="star2"><label for="star2"></label>
                  <input type="radio" name="star" id="star3"><label for="star3"></label>
@@ -62,9 +61,9 @@
                  <input type="radio" name="star" id="star5"><label for="star5"></label>
                  
 
-                  </div>
-                  <a href="https://www.bing.com/videos/search?q=deadpool+2&&view=detail&mid=7F4B5A1528247165030D7F4B5A1528247165030D&&FORM=SVRTCV" target="blank_">
-                <button>Trailer</button>
+                  </div> -->
+                  <a href="https://www.bing.com/videos/search?q=sang+chi+trailer&&view=detail&mid=CADA2AAC10454ABB8A23CADA2AAC10454ABB8A23&&FORM=SVRTCV" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button>
             </a>
                          </div>
             
@@ -72,7 +71,7 @@
         <!--  mov -->
         <div class="card">
             <div class="image">
-                <img src="https://pisco.trinikid.com/2e6881fc-82e1-4cfc-9dee-169dff24f947.jpg">
+                <img src="images - Copy/popular-movie-1.jpg">
 
             </div>
             <div class="title">
@@ -80,17 +79,11 @@
             </div>
             <div class="des">
                 <p>9.2</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star6"><label for="star6"></label>
-                    <input type="radio" name="star" id="star7"><label for="star7"></label>
-                    <input type="radio" name="star" id="star8"><label for="star8"></label>
-                    <input type="radio" name="star" id="star9"><label for="star9"></label>
-                    <input type="radio" name="star" id="star10"><label for="star10"></label>
-                    
-   
-                     </div>
-                     <a href="https://www.bing.com/videos/search?q=spider+man+no+way+home+official+trailer&&view=detail&mid=55046EE098B74D6C9D9B55046EE098B74D6C9D9B&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dspider%2520man%2520no%2520way%2520home%2520official%2520trailer%26qs%3DMM%26form%3DQBVDMH%26sp%3D6%26pq%3Dspider%26sk%3DMM5%26sc%3D8-6%26cvid%3D61D220EC58CE4A00A3FE9773A80ED434" target="blank_">
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                     <a href="https://www.bing.com/videos/search?q=spider+man+no+way+home+official+trailer&&view=detail&mid=8B0EEE46D4B7857BB4A98B0EEE46D4B7857BB4A9&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dspider%2520man%2520no%2520way%2520home%2520official%2520trailer%26qs%3DHS%26form%3DQBVDMH%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D1%26pq%3Dspider%26sc%3D8-6%26cvid%3DE17EC446790A47DDA05C3C9736683D8D" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button>
             </a>
             </div>
             
@@ -99,49 +92,41 @@
 
         <div class="card">
             <div class="image">
-                <img src="https://i0.wp.com/tecake.com/wp-content/uploads/2020/04/MATRIX_4_Shoots_Next_Month.jpg?fit=1000%2C522&ssl=1">
+                <img src="images - Copy/popular-movie-4.jpg">
 
             </div>
             <div class="title">
-               <h2>Matrix</h2> 
+               <h2>SquidGame</h2> 
             </div>
             <div class="des">
                 <p>8.8</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star11"><label for="star11"></label>
-                    <input type="radio" name="star" id="star12"><label for="star12"></label>
-                    <input type="radio" name="star" id="star13"><label for="star13"></label>
-                    <input type="radio" name="star" id="star14"><label for="star14"></label>
-                    <input type="radio" name="star" id="star15"><label for="star15"></label>
-                    
-   
-                     </div>
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+
+                     <a href="https://www.bing.com/videos/search?q=squid+game+trailer&&view=detail&mid=1093FE8B4F252CF600091093FE8B4F252CF60009&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dsquid%2520game%2520trailer%26qs%3DMM%26form%3DQBVR%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D2%26ghc%3D1%26pq%3Dsquid%2520g%26sk%3DMM1%26sc%3D8-7%26cvid%3D3E812398B8994039B2C314FDF5E1279A" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button></a>
             </div>
             
         </div>
         <!--  mov -->
         <div class="card">
             <div class="image">
-                <img src="https://static3.srcdn.com/wordpress/wp-content/uploads/2020/05/Demon-Slayer-Movie-2.jpg">
+                <img src="images - Copy/popular-movie-5.jpg">
 
             </div>
             <div class="title">
-               <h2>Demon Slayer
+               <h2>CaptainAmerica
                </h2> 
             </div>
             <div class="des">
                 <p>9.7</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star16"><label for="star16"></label>
-                    <input type="radio" name="star" id="star17"><label for="star17"></label>
-                    <input type="radio" name="star" id="star18"><label for="star18"></label>
-                    <input type="radio" name="star" id="star19"><label for="star19"></label>
-                    <input type="radio" name="star" id="star20"><label for="star20"></label>
-                    
-   
-                     </div>
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+            
+                     <a href="https://www.bing.com/videos/search?q=falcon+trailer&&view=detail&mid=279126C1EEAE9BCADF12279126C1EEAE9BCADF12&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dfalcon%2520trailer%26qs%3Dn%26form%3DQBVR%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D-1%26pq%3Dfalcon%2520trailer%26sc%3D8-14%26sk%3D%26cvid%3D6F92E74B85EF419E805A8F565F8E1326" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button></a>
             </div>
             
         </div>
@@ -149,102 +134,160 @@
 
         <div class="card">
             <div class="image">
-                <img src="https://heavy.com/wp-content/uploads/2019/10/ultron.jpg?quality=65&strip=all">
+                <img src="images - Copy/popular-movie-6.jpg">
 
             </div>
             <div class="title">
-               <h2>Avengers</h2> 
+               <h2>Hawkeye</h2> 
             </div>
             <div class="des">
                 <p>8.5</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star21"><label for="star21"></label>
-                    <input type="radio" name="star" id="star22"><label for="star22"></label>
-                    <input type="radio" name="star" id="star23"><label for="star23"></label>
-                    <input type="radio" name="star" id="star24"><label for="star24"></label>
-                    <input type="radio" name="star" id="star25"><label for="star25"></label>
-                    
-   
-                     </div>
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                     <a href="https://www.bing.com/videos/search?q=hawkeye+trailer&&view=detail&mid=BF4AF4D71423F0EFC66DBF4AF4D71423F0EFC66D&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dhawkeye%2520trailer%26qs%3DMM%26form%3DQBVDMH%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D1%26ghc%3D1%26pq%3Dhawkeye%26sc%3D8-7%26cvid%3DBDEBA4AD78614B39A0A94CC17A0EEB85" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button></a>
             </div>
             
         </div>
         <!--  mov -->
-        <div class="card">
+        <!-- <div class="card">
             <div class="image">
-                <img src="https://fandomwire.com/wp-content/uploads/2020/08/4-13.jpg">
+                <img src="images - Copy/popular-movie-7.jpg">
 
             </div>
             <div class="title">
-               <h2>Etarnals</h2> 
+               <h2>SHIELD</h2> 
             </div>
             <div class="des">
                 <p>9.8</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star26"><label for="star26"></label>
-                    <input type="radio" name="star" id="star27"><label for="star27"></label>
-                    <input type="radio" name="star" id="star28"><label for="star28"></label>
-                    <input type="radio" name="star" id="star29"><label for="star29"></label>
-                    <input type="radio" name="star" id="star30"><label for="star30"></label>
-                    
-   
-                     </div>
-                <button type="submit">Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                     <a href="https://www.bing.com/videos/search?q=SHIELD+trailer&&view=detail&mid=6CCEE164772615C7660A6CCEE164772615C7660A&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DSHIELD%2520trailer%26qs%3Dn%26form%3DQBVR%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D-1%26ghc%3D1%26pq%3Dshield%2520trailer%26sc%3D8-14%26sk%3D%26cvid%3D492CE28EC27540809C8B36BD1AFB906B" target="blank_">
+                <button type="submit">Trailer <i class="fas fa-play" id="play"></i></button></a>
             </div>
             
         </div>
-        
+         -->
 
-        <div class="card">
+        <!-- <div class="card">
             <div class="image">
-                <img src="https://th.bing.com/th/id/OIP.DI9V20fobPGXoxwE6nepAAHaHa?pid=ImgDet&w=720&h=720&rs=1">
+                <img src="images - Copy/popular-movie-8.jpg">
 
             </div>
             <div class="title">
-               <h2>Naruto</h2> 
+               <h2>Flash</h2> 
             </div>
             <div class="des">
                 <p>9.7</p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star31"><label for="star31"></label>
-                    <input type="radio" name="star" id="star32"><label for="star32"></label>
-                    <input type="radio" name="star" id="star33"><label for="star33"></label>
-                    <input type="radio" name="star" id="star34"><label for="star34"></label>
-                    <input type="radio" name="star" id="star35"><label for="star35"></label>
-                    
-   
-                     </div>
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                     <a href="https://www.bing.com/videos/search?q=flash+trailer&&view=detail&mid=73257E1AA73A4385710D73257E1AA73A4385710D&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dflash%2520trailer%26qs%3Dn%26form%3DQBVDMH%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D-1%26ghc%3D2%26pq%3Dflash%2520tr%26sc%3D8-8%26sk%3D%26cvid%3D44BBEEEEE11F45F3AE77561CE2D611CF" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button></a>
                     </div>
             
-        </div>
+        </div> -->
         <!--  mov -->
         <div class="card">
             <div class="image">
-                <img src="https://images.hungama.com/c/1/ce8/446/50629739/50629739_1280x800.jpg">
+                <img src="images - Copy/movie-6.jpg">
 
             </div>
             <div class="title">
-               <h2>Lucy</h2> 
+               <h2>MoneyHeist</h2> 
             </div>
             <div class="des">
                 <p>6.5 </p>
-                <div class="rating">
-                    <input type="radio" name="star" id="star36"><label for="star36"></label>
-                    <input type="radio" name="star" id="star37"><label for="star37"></label>
-                    <input type="radio" name="star" id="star38"><label for="star38"></label>
-                    <input type="radio" name="star" id="star39"><label for="star39"></label>
-                    <input type="radio" name="star" id="star40"><label for="star40"></label>
-                    
-   
-                     </div>
-                <button>Trailer</button>
+                <div class="container4">
+                    <button class="open" onclick="togglepop()"><i class="far fa-star"></i></button>
+                  </div>
+                     <a href="https://www.bing.com/videos/search?q=Money+Heist+New+Season+5&&view=detail&mid=9D6710E0E82A25E8589D9D6710E0E82A25E8589D&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DMoney%2BHeist%2BNew%2BSeason%2B5%26FORM%3DRESTAB" target="blank_">
+                <button>Trailer <i class="fas fa-play" id="play"></i></button></a>
             </div>
             
         </div>
         
     </div>
 
+   <div class="space">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis rerum, non tenetur molestias iusto voluptas incidunt laudantium harum perferendis dicta quam nulla saepe aspernatur omnis reiciendis distinctio commodi architecto placeat!
+       Sint impedit nulla unde. Et explicabo ullam saepe beatae veniam libero natus facere, blanditiis nam numquam doloremque cum animi expedita. Quod repellat voluptas tempora autem veniam nam, et dolores commodi?
+       Commodi vero explicabo veritatis omnis dolores earum doloremque porro molestiae illo praesentium, suscipit totam ipsam aliquid perspiciatis nam recusandae repellat accusantium, quos eum ratione. Facere dicta impedit ab a culpa?
+       Impedit nobis enim quam similique necessitatibus ab, vitae dolor unde, aliquid asperiores minima. Nihil doloremque qui, inventore minima ea, modi ad deleniti maiores alias adipisci vel, iure est nam placeat.
+       Sint accusantium praesentium ducimus quo asperiores cum sed placeat, dolor modi culpa commodi, voluptates rerum nam tenetur facere natus eaque! Quas, esse illum. Alias vero animi ad debitis est quibusdam.
+       Nulla voluptatum inventore dolor, deserunt harum temporibus sed exercitationem assumenda nesciunt repellat nemo dolorum, culpa totam ratione voluptatibus necessitatibus iste dolores dicta ex quos, adipisci incidunt mollitia perferendis cumque! Rerum!
+       Vero quidem, veritatis iercitationem minus voluptates consequatur quibusdam voluptatum! Recusandae impedit unde ipsa laboriosam, pariatur ad architecto cum nobis quisquam dolorum vitae possimus soluta enim. Blanditiis recusandae quas magnam doloremque quaerat provident odio?
+       Rem aliquam eveniet vel quia tempore quae minima assumenda sed ullam minus necessitatibus accusamus esse, sit praesentium reprehenderit voluptas adipisci deserunt, excepturi aperiam vero sapiente voluptatem nostrum? Doloremque, cum ducimus.
+       Accusamus, dolores molestias libero animi quam ea aliquam repellat nam unde delectus saepe nesciunt officia inventore dolore id quibusdam quidem dolorem explicabo cumque. Tempora similique, eius sint aliquam totam cumque?
+       Quis placeat repudiandae reprehenderit voluptas. Ad, neque. Repellat nobis magni laboriosam nisi neque iure quos officiis repellendus ducimus quisquam, minima, cum corporis ab? Odit blanditiis asperiores molestias tenetur maiores optio.
+       Sed reprehenderit atque officia sit assumenda, exercitationem nemo optio, soluta in adipisci ex iste officiis deleniti magnam impedit deserunt, veniam totam voluptatum quod ea fugit doloremque? Unde provident obcaecati ad.
+       Laudantium animi expedita nam? Ad dolorum sit incidunt alias quam facere tempore, natus odio numquam ea doloribus illum expedita eum magni animi dignissimos harum omnis ut fuga. Non, veniam labore!
+       Ipsum, ad cupiditate aliquid eius corporis dolore obcaecati repellendus odio ex soluta cumque accusamus quis dignissimos. Quaerat excepturi pariatur perspiciatis rerum iste placeat hic obcaecati, nostrum, quisquam molestias molestiae quidem?
+       Cum, laboriosam repudiandae ipsum numquam pariatur maxime excepturi a voluptates omnis quibusdam, sint enim esse, similique doloribus dolore facilis praesentium repellat fugiat ea dolores officia! Quis cupiditate dignissimos ad est?
+       Veniam commodi ea iusto, saepe dicta perspiciatis. Nostrum inventore architecto officiis quibusdam culpa saepe ipsa? Sint iusto ratione neque totam nam eos repellendus aliquam libero aperiam officia, sequi at laudantium?
+       Molestiae odit praesentium vitae ut vel tempora corporis officiis, necessitatibus et atque, eligendi repellat. Porro, neque maxime quibusdam accusantium a inventore illo. Placeat illo fugit debitis pariatur, earum labore vel.
+       Provident esse, dicta impedit, quis suscipit inventore cum eligendi explicabo doloremque, voluptates quas tempora. Officiis deleniti non optio voluptas, odit adipisci voluptatum culpa consectetur amet excepturi magnam tenetur sit laborum?</p>
+   </div>
+ <!-- footer -->
+ <section class="footer">
+    <figure class="social">
+        <a href="#" ><i class="fa fa-facebook"></i></a>
+        <a href="#" ><i class="fa fa-twitter"></i></a>
+        <a href="#" ><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a> 
+    </figure>
+    <ul class="list">
+        <li>
+            <a href="#">Home</a>
+       </li>
+       <li>
+        <a href="#">About</a>
+       </li>
+        <li>
+         <a href="#">Contact</a>
+        </li>
+         <li>
+          <a href="#">PrivacyPolicy</a>
+        </li>
+       </ul>
+       <p class="copyright">Filmcave@2021</p>
+       
+    </section>
+
+       <!-- pop up -->
+
+       <div class="model" id="model">
+     
+        <div class="modelheader">
+          <div class="title">Rate Here</div>
+          <button class="close" onclick="togglepop()">&times;</button>
+        </div>
+        <div class="rating">
+             <input type="radio" id="rating1" name="rating" value="1">
+             <label for="rating1" class="fas fa-star"></label>
+             <input type="radio" id="rating2" name="rating" value="2">
+             <label for="rating2" class="fas fa-star"></label>
+             <input type="radio" id="rating3" name="rating" value="3">
+             <label for="rating3" class="fas fa-star"></label>
+             <input type="radio" id="rating4" name="rating" value="4">
+             <label for="rating4" class="fas fa-star"></label>
+             <input type="radio" id="rating5" name="rating" value="5">
+             <label for="rating5" class="fas fa-star"></label>
+      
+        </div>
+        
+        <input class="share" type="text" placeholder="share your experience">
+        <div class="submitit">
+        <button class="submit">post</button>
+      </div>
+      </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="slider.js"></script>
+      
+<script src="movies.js"></script>       
 </body>
 </html>

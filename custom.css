@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:auto;
+    
+}
+body{
+    background-image: url('images - Copy/stars.jpg');
+    background-size: cover;
+     display: flex;
+    
+}
+header{
+    position: absolute;
+    font-family: Monoton;
+    color: whitesmoke;
+    top: 20%;
+    left: 30%;
+    font-weight: 500;
+    color: gold;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+.container{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 120px;
+    height: 80px;
+    background: transparent;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgb(74, 73, 73);
+    border: 3px solid gold;
+}
+.container .open{
+    position: relative;
+    top: 24%;
+    left: 30%;
+    width: 50px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(231, 198, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgb(103, 101, 101);
+     transition: all .5s ease;
+}
+.container .open:hover{
+    top: 21%;
+    left: 28%;
+    background: rgb(21, 5, 32);
+   
+}
+.container .open i{
+    color: rgb(211, 221, 29);
+    font-size: 20px;
+    transition: all .5s ease;
+    
+    
+}
+.container .open i:hover{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.model{
+    position:absolute;
+    top: 40%;
+    left: 45%;
+    box-shadow: -2px -2px 10px black;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 7%;
+    background: #444;
+    width: 300px;
+    height: 26%;
+     text-align: center;
+     border: 3px solid rgb(105, 104, 104);
+}
+.model .modelheader .title{
+    margin-top: 14px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family:Alata ;
+    font-weight: bolder;
+    color:rgba(253, 245, 230, 0.803);
+
+}
+.model .close{
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    top: -37px;
+    left: 130px;
+    width: 20px;
+    border: none;
+    background: inherit;
+    color: cornsilk;
+    transition: all .7s ease;
+    
+}
+.model .close:hover{
+    
+    color: rgba(255, 99, 71, 0.884);
+}
+.model.active {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+    
+  }
+.share{
+    position: relative;
+    height: 60px;
+    bottom: -10px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #eee;
+    cursor: pointer;
+    outline: none;
+    text-align:center;
+}
+.submitit{
+    margin-top: 15px;
+}
+.submit{
+    position:relative;
+    cursor: pointer;
+    left: 1px;
+    width: 165px;
+    height: 30px;
+    border: 1px solid #444;
+    background: #222;
+    text-transform: uppercase;
+    font-family: Alata;
+    color: #999;
+    transition: all .4s ease;
+
+}
+.submit:hover{
+     width: 170px;
+     border: 1px solid #fff;
+     color: #fff;
+}
+
+
+.rating{
+    font-size: 25px;
+    color: rgba(41, 40, 40, 0.619);
+    cursor: pointer;
+    direction: rtl;
+    margin-top: -10px;
+    transition: all .7s ease;
+    
+   
+}
+.rating input{
+    display:none ;
+    
+    
+}
+
+.rating input:checked ~ label{
+    color: #fd4;
+    text-shadow: 1px 1px #c60;
+    
+   
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label{
+    color:#fd4;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>   
     <title>Sign_In Form</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bangers" />
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
+
+    <nav class="container2">
+        <div class="logo"><p>FILM<span class="cave">CAVES</span></p></div>
+    
+         <ol>
+         <li><a class="active" href="index.html">HOME </a></li>
+         <li><a class="ex1" href="signup.html">SIGN_UP</a></li>
+         <li><a class="ex1" href="login.html">LOGIN</a></li>
+         <li><a class="ex1" href="movies.html">MOVIES</a></li>
+         <li><a class="ex1" href="about.html">ABOUT</a></li>
+        </ol>
+    </nav>
+
     <main class="container">
         <h2>Signin</h2>
         <form action="">
             <div class="input-field">
                 <input type="text" name="username" id="username"
                     placeholder="Enter Your Username">
-                <!-- <div class="underline"></div> -->
+                <div class="underline"></div>
             </div>
             <div class="input-field">
-              <input type="email" name="email" id="email" placeholder="Enter Your email">
-              <!-- <div class="underline"></div> -->
+              <input type="email" name="email" id="email" placeholder="Enter Your Email">
+              <div class="underline"></div>
           </div>
 
             <div class="input-field">
                 <input type="password" name="password" id="password"
                     placeholder="Enter New Password">
-                <!-- <div class="underline"></div> -->
-                <br>
+                <div class="underline"></div>
+                
             </div>
             <div class="input-field">
               <input type="new password" name="new password" id="password"
                   placeholder="Rewrite Password">
-              <!-- <div class="underline"></div> -->
+              <div class="underline"></div>
              
           </div>
             <input type="submit" value="Signin">
+
+            <p class="forget">Already have an Account ?<a href="login.html">Login</a></p>      
         </form>
     </main>
+    <div class="box">
+        <div class="square" style="--i:0"></div>
+        <div class="square" style="--i:1"></div>
+        <div class="square" style="--i:2"></div>
+        <div class="square" style="--i:3"></div>
+        <div class="square" style="--i:4"></div>
+    </div>
 </body>
 </html>
